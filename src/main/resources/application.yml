@@ -8,9 +8,9 @@ spring:
       server:
         native:
             search-locations:
-              - /configs
-              - /configs/{application}
-              - /configs/{application}/{profile}
+              - file:///configs
+              - file:///configs/{application}
+              - file:///configs/{application}/{profile}
               - classpath:/configs
               - classpath:/configs/{application}
               - classpath:/configs/{application}/{profile}
